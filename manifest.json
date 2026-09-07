@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Grammarly Blur Toggle",
+  "version": "1.0.0",
+  "description": "Toggles client-side visual blur on grammarly.com pages.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://grammarly.com/*", "https://*.grammarly.com/*"],
+  "action": {
+    "default_title": "Toggle Grammarly blur",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://grammarly.com/*", "https://*.grammarly.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

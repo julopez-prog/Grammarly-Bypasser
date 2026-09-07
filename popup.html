@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grammarly Blur Toggle</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Blur toggle</h1>
+      <label class="switch-row">
+        <span>Remove client-side blur</span>
+        <input id="enabled" type="checkbox">
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+      <p id="status">Checking this page...</p>
+      <p class="note">This only changes CSS already rendered in the page. It cannot reveal content that was not delivered to your browser.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
